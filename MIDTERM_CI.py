@@ -32,7 +32,7 @@ st.title("Text Summarization App")
 article_input = st.text_area("Input your article here:")
 
 if st.button("Summarize"):
-    if article_input.strip() != "":
+    if article_input.strip():
         summary = generate_summary(article_input)
         st.subheader("Summary:")
         st.write(summary)
